@@ -5,10 +5,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int x;
 
-        System.out.println("Enter player namen: ");
-        String playerName = sc.nextLine();
+        System.out.println("Enter a number: ");
+        x = sc.nextInt();
 
-        System.out.println("Player #1: " + playerName);
+        for (int i = 0; i < x ; i++) {
+            System.out.println("The loop will run " + x + " times");
+
+        }
+
+
+
+
+
     }
 }
