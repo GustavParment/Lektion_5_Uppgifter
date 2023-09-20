@@ -4,24 +4,35 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Input input = new Input();
+
+
         boolean isPlaying = true;
 
 
         do {
-            System.out.println("\u001b[32m"+"PRESS 'ENTER' TO CONTINUE THE LOOP" + "\u001b[0m"+
-                    "\u001B[31m"+"\nOR TYP EXIT TO STOP LOOP" + "\u001B[0m");
-            String result = sc.nextLine();
 
-            if (result.equalsIgnoreCase("stop")){
-                break;
+            System.out.println("\u001B[32m" + "ENTER INPUT: " + "\u001B[0m");
+            String s = input.getString();
+
+            switch (s){
+                case "Stop" : isPlaying = false;
+                      break;
+
+                case "1" : System.out.println("\u001B[33m" + "Throwing! " + "\u001B[0m");
+                    break;
+
+                default: System.out.println("\u001B[31m" + "\nWrong input" + "\u001B[0m" );
+
+
             }
 
 
-
-        }while(isPlaying );
+        }while(isPlaying);
 
 
 
     }
+
+
 }
