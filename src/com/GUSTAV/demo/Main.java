@@ -7,32 +7,20 @@ public class Main {
         Input input = new Input();
 
 
-        boolean isPlaying = true;
+        System.out.println("Enter number: ");
+
+        while(!input.sc.hasNextInt()){
+
+            System.out.println("Wrong datatype, try again. ");
+            input.sc.next();
+
+        }
 
 
-        do {
-
-            System.out.println("\u001B[32m" + "ENTER INPUT: " + "\u001B[0m");
-            String s = input.getString();
-
-            switch (s){
-                case "Stop" : isPlaying = false;
-                      break;
-
-                case "1" : System.out.println("\u001B[33m" + "Throwing! " + "\u001B[0m");
-                    break;
-
-                default: System.out.println("\u001B[31m" + "\nWrong input" + "\u001B[0m" );
 
 
-            }
-
-
-        }while(isPlaying);
 
 
 
     }
-
-
 }
