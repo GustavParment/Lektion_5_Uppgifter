@@ -11,7 +11,7 @@ public class Main {
 
         while(!input.sc.hasNextInt()){
 
-            System.out.println("Wrong datatype, try again. ");
+            System.out.println("Wrong datatype, try again! ");
             input.sc.next();
 
         }
@@ -19,7 +19,7 @@ public class Main {
 
 
 
-//uppgift 6
+    //uppgift 6
 
 
     }
